@@ -1581,9 +1581,14 @@ footer{background:var(--brown);padding:48px 40px 28px;display:grid;grid-template
       <!-- BRANCHE GAUCHE : Conseil de l'Église -->
       <div class="org-group" style="align-items:flex-start;width:320px;">
         <div class="v-line" style="height:28px;margin-left:75px;"></div>
+        <!-- Ligne H entre les 2 cartes spirituelles -->
+        <div style="position:relative;width:296px;">
+          <div style="position:absolute;top:0;left:75px;right:75px;height:2px;background:var(--brown);"></div>
+        </div>
         <div style="display:flex;gap:16px;">
           <!-- Pasteur Adjoint -->
           <div class="org-group">
+            <div class="v-line" style="height:20px;background:var(--brown);"></div>
             <div class="org-card spiritual" style="width:140px;">
               <div class="org-avatar" style="background:linear-gradient(135deg,#AFA9EC,#534AB7);">DA</div>
               <div class="org-name">Pasteur David ASSOA</div>
@@ -1593,6 +1598,7 @@ footer{background:var(--brown);padding:48px 40px 28px;display:grid;grid-template
           </div>
           <!-- Prédicateur -->
           <div class="org-group">
+            <div class="v-line" style="height:20px;background:var(--brown);"></div>
             <div class="org-card spiritual" style="width:140px;">
               <div class="org-avatar" style="background:linear-gradient(135deg,#85B7EB,#185FA5);">AD</div>
               <div class="org-name">Aug. DJOMAN</div>
@@ -1621,7 +1627,14 @@ footer{background:var(--brown);padding:48px 40px 28px;display:grid;grid-template
 
     <!-- LIGNE H bureau exécutif -->
     <div style="position:relative;width:680px;">
-      <div style="position:absolute;left:340px;right:0;top:0;height:2px;background:var(--gold);"></div>
+      <div style="position:absolute;left:340px;right:36px;top:0;height:2px;background:var(--gold);"></div>
+    </div>
+
+    <!-- Trait vertical de Aline vers la ligne H -->
+    <div style="width:680px;display:flex;justify-content:flex-end;">
+      <div style="width:170px;display:flex;justify-content:center;">
+        <div class="v-line" style="height:28px;background:var(--gold);margin-top:-28px;"></div>
+      </div>
     </div>
 
     <!-- NIVEAU 2 : BUREAU EXÉCUTIF -->
