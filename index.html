@@ -1623,13 +1623,12 @@ footer{background:var(--brown);padding:48px 40px 28px;display:grid;grid-template
     </div>
 
     <!-- Trait vertical de Aline MAMBO vers le bureau exécutif -->
-    <div style="width:680px;display:flex;justify-content:flex-end;padding-right:85px;">
-      <div style="width:2px;height:48px;background:var(--gold);"></div>
-    </div>
-
-    <!-- LIGNE H bureau exécutif -->
-    <div style="width:680px;display:flex;justify-content:flex-end;">
-      <div style="width:576px;height:2px;background:var(--gold);"></div>
+    <div style="width:680px;position:relative;">
+      <!-- Ligne verticale sous Aline (centrée sur la carte Aline = droite 85px) -->
+      <div style="position:absolute;right:85px;top:0;width:2px;height:48px;background:var(--gold);"></div>
+      <!-- Ligne horizontale or couvrant les 4 cartes -->
+      <div style="position:absolute;left:110px;right:85px;top:48px;height:2px;background:var(--gold);"></div>
+      <div style="height:50px;"></div>
     </div>
 
     <!-- NIVEAU 2 : BUREAU EXÉCUTIF -->
