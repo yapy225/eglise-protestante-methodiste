@@ -284,6 +284,73 @@ svg-icon{display:inline-block;}
 .fis-select{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:10px;padding:11px 14px;color:#fff;font-size:12px;font-family:'DM Sans',sans-serif;}
 .fis-select option{color:#000;}
 .fis-btn{background:#fff;color:var(--green);padding:11px 24px;border-radius:10px;font-size:13px;font-weight:500;border:none;cursor:pointer;white-space:nowrap;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{width:22px;height:2px;background:var(--brown);border-radius:2px;}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:20px 24px;z-index:99;flex-direction:column;gap:14px;box-shadow:0 8px 24px rgba(0,0,0,.1);}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-size:14px;color:var(--brown);padding:8px 0;border-bottom:1px solid var(--border);}
+
+@media(max-width:900px){
+  /* Nav */
+  nav{padding:0 20px;}
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+
+  /* Social bar */
+  .social-bar{padding:7px 20px;flex-wrap:wrap;gap:6px;}
+
+  /* Hero */
+  .hero{grid-template-columns:1fr;padding:40px 20px 0;}
+  .hero-right{display:none;}
+  h1{font-size:28px;}
+
+  /* Reservations */
+  .reservations{padding:40px 20px;}
+  .reservations-grid{grid-template-columns:1fr;}
+  .resa-row{grid-template-columns:1fr;}
+
+  /* Presidente */
+  .presidente-section{grid-template-columns:1fr;padding:40px 20px;}
+
+  /* Aide */
+  .aide-section{padding:40px 20px;}
+  .aide-grid{grid-template-columns:1fr;}
+
+  /* Fideles */
+  .fideles-section{padding:40px 20px;}
+  .fideles-grid{grid-template-columns:1fr 1fr;}
+
+  /* Features */
+  .features{padding:40px 20px;}
+  .features-grid{grid-template-columns:1fr 1fr;}
+
+  /* Footer */
+  footer{grid-template-columns:1fr 1fr;padding:32px 20px;}
+  .fbot{flex-direction:column;gap:6px;text-align:center;padding:12px 20px;}
+
+  /* Formation */
+  .formation-section{padding:40px 20px;}
+  .formation-hero{grid-template-columns:1fr;gap:24px;}
+  .form-title{font-size:24px;}
+
+  /* Cycles / Levels */
+  .form-levels-grid{display:flex;flex-direction:column;gap:16px;}
+
+  /* Modes */
+  .form-modes{grid-template-columns:1fr;}
+
+  /* Inscription strip */
+  .form-inscription-strip{flex-direction:column;padding:24px 20px;}
+  .fis-form{flex-direction:column;width:100%;}
+  .fis-input,.fis-select{width:100%;}
+}
+
+@media(max-width:500px){
+  .fideles-grid{grid-template-columns:1fr;}
+  .features-grid{grid-template-columns:1fr;}
+  .cta-row{flex-direction:column;}
+  .cta-row a,.cta-row button{width:100%;text-align:center;}
+}
 </style>
 </head>
 <body>
@@ -304,7 +371,18 @@ svg-icon{display:inline-block;}
     <a href="#">Don</a>
     <button class="nav-btn">Newsletter du lundi</button>
   </div>
+  <div class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#">Accueil</a>
+  <a href="#">Culte</a>
+  <a href="#">Formation</a>
+  <a href="#">Aide</a>
+  <a href="#">Fidèles</a>
+  <a href="#">Don</a>
+</div>
 
 <!-- SOCIAL BAR -->
 <div class="social-bar">

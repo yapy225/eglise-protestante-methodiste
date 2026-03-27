@@ -180,7 +180,7 @@ h1 span{color:var(--green);}
 .sched-info-sub strong{color:var(--green-dark);}
 
 /* Niveau cards */
-.levels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:40px;}
+.levels-grid{display:flex;flex-direction:column;gap:22px;margin-bottom:40px;}
 .level-card{border-radius:18px;overflow:hidden;border:1px solid var(--border);transition:transform .2s,box-shadow .2s;}
 .level-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.1);}
 .lc-head{padding:26px 22px 18px;}
@@ -566,7 +566,7 @@ footer{background:var(--brown);padding:48px 40px 28px;display:grid;grid-template
 
 /* RYTHME PEDA */
 .rythme-section{background:var(--cream);padding:64px 40px;}
-.rythme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px;}
+.rythme-grid{display:flex;flex-direction:column;gap:20px;margin-top:48px;}
 .rythme-card{background:#fff;border-radius:18px;padding:24px 20px;border:1px solid var(--border);text-align:center;}
 .rythme-step-num{width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;font-family:'Playfair Display',serif;font-size:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
 .rythme-icon{font-size:28px;margin-bottom:10px;}
@@ -576,7 +576,7 @@ footer{background:var(--brown);padding:48px 40px 28px;display:grid;grid-template
 
 /* CALENDRIER */
 .calendrier-section{padding:64px 40px;background:#fff;}
-.cal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px;}
+.cal-grid{display:flex;flex-direction:column;gap:16px;margin-top:48px;}
 .cal-card{border-radius:16px;overflow:hidden;border:1px solid var(--border);}
 .cal-month{padding:14px;text-align:center;font-weight:600;font-size:13px;color:#fff;}
 .cal-body{padding:14px 16px;}
@@ -669,6 +669,73 @@ footer{background:var(--brown);padding:48px 40px 28px;display:grid;grid-template
   .don-projects{grid-template-columns:1fr;}
   .don-form-grid{grid-template-columns:1fr;}
   .don-amounts{grid-template-columns:repeat(2,1fr);}
+  .don-field-row{grid-template-columns:1fr;}
+
+  /* Live banner */
+  #live-banner{padding:9px 20px;flex-wrap:wrap;gap:8px;}
+  .live-text{font-size:11px;}
+
+  /* Social bar */
+  .social-bar{padding:7px 20px;flex-wrap:wrap;gap:6px;}
+
+  /* Bible Academy */
+  .academy-hero{padding:40px 20px;}
+  .academy-hero-title{font-size:26px;}
+  .academy-devise{font-size:14px;}
+  .academy-stats{gap:20px;}
+  .academy-stat-num{font-size:24px;}
+  .academy-logo-wrap{padding:10px 16px;gap:10px;}
+  .academy-logo-name{font-size:16px;}
+
+  /* Cycles */
+  .cycles-section{padding:40px 20px;}
+  .cycle-layout{grid-template-columns:1fr;gap:24px;}
+  .cycle-title{font-size:22px;}
+  .trimestres{margin-bottom:16px;}
+
+  /* Calendrier */
+  .calendrier-section{padding:40px 20px;}
+  .cal-grid{grid-template-columns:1fr 1fr;gap:12px;}
+
+  /* Inscription */
+  .inscription-section{padding:40px 20px;}
+  .inscr-grid{grid-template-columns:1fr;gap:24px;}
+  .inscr-title{font-size:24px;}
+
+  /* Events */
+  .events-section{padding:40px 20px;}
+  .events-grid{grid-template-columns:1fr;gap:16px;}
+  .deces-block{flex-direction:column;padding:24px 20px;gap:20px;text-align:center;}
+
+  /* Organigramme */
+  .org-section{padding:40px 20px;}
+  .org-tree{min-width:0;width:100%;}
+  .org-level,.org-row{flex-wrap:wrap;gap:12px;}
+  .org-card{width:120px!important;padding:12px 10px;}
+  .org-avatar{width:44px;height:44px;margin-bottom:8px;}
+  .org-avatar img{width:44px;height:44px;}
+  .org-name{font-size:11px;}
+  .org-role{font-size:9px;}
+  .org-wrap{overflow-x:visible;}
+  .org-row::before{display:none;}
+  .org-connector-h{display:none;}
+
+  /* Board */
+  .board-section{padding:0 20px 40px;}
+  .board-grid{grid-template-columns:1fr;gap:20px;}
+}
+
+@media(max-width:500px){
+  .fideles-grid{grid-template-columns:1fr;}
+  .cal-grid{grid-template-columns:1fr;}
+  .countdown-box{flex-direction:column;gap:8px;}
+  .cd-timer{gap:6px;}
+  .don-amounts{grid-template-columns:1fr 1fr;}
+  .academy-stats{flex-direction:column;gap:14px;}
+  .ctab{padding:8px 14px;font-size:12px;}
+  .rf-row{grid-template-columns:1fr;}
+  .cta-row{flex-direction:column;}
+  .cta-row a,.cta-row button{width:100%;text-align:center;}
 }
 </style>
 </head>
